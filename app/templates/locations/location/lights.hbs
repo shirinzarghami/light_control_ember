@@ -1,0 +1,16 @@
+<div class="page-header">
+  <h1>Lights</h1>
+</div>
+
+<ul class='lights'>
+  {{#each lights in model}}
+    <li class="alert alert-info">{{lights.name}}</li>
+    <p>
+      <button {{action "turnOn" lights}}>Turn On</button>
+      <button {{action "turnOff" lights}}>Turn Off</button>
+    </p>
+  {{/each}}
+</ul>
+
+<hr>
+{{outlet}}

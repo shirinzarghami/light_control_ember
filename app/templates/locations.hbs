@@ -1,0 +1,24 @@
+<div>
+  <h1>Locations</h1>
+  <hr>
+</div>
+
+<div class="row">
+
+  <div class="col-md-3">
+    {{#each model as |location|}}
+      <div>
+        <h4>
+          {{#link-to 'locations.location.lights' location}}
+            {{location.name}}
+          {{/link-to}}
+        </h4>
+        <hr>
+      </div>
+    {{/each}}
+  </div>
+
+  <div class="col-sm-8 col-sm-offset-1">
+    {{outlet}}
+  </div>
+</div>
