@@ -7,7 +7,7 @@ The Raspberry Pi runs a simple Ruby on Rails application which enables a Restful
 
 The EmberJS application retrieves a list of locations from the server (using the standard Ember REST adapter). When a location/room is clicked the lights for this location are retrieved and shown. Per light on and off buttons are shown. When clicked, an ajax call is made to the server which then sends the appropriate signals to power sockets.
 
-Tje server side can be found [hier] (https://github.com/shirinzarghami/light-_control_server)
+Tje server side can be found [hier](https://github.com/shirinzarghami/light_control_server)
 
 ## Prerequisites
 
