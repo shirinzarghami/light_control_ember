@@ -1,7 +1,13 @@
 # Light-test
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a project to control of the lights around a house. This is enabled by using a Raspberry Pi which controls
+a 433Mhz transmitter that can send 3-byte codes to several power sockets installed around the house to which the lights are connected.
+
+The Raspberry Pi runs a simple Ruby on Rails application which enables a Restful communication with this EmberJS app.
+
+The EmberJS application retrieves a list of locations from the server (using the standard Ember REST adapter). When a location/room is clicked the lights for this location are retrieved and shown. Per light on and off buttons are shown. When clicked, an ajax call is made to the server which then sends the appropriate signals to power sockets.
+
+Tje server side can be found [hier] (https://github.com/shirinzarghami/light-_control_server)
 
 ## Prerequisites
 
